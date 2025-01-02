@@ -1,0 +1,68 @@
+# Общие исключения для Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Исключения для подпроектов
+**/__pycache__/
+**/*.py[cod]
+**/$py.class
+
+# Общие исключения для виртуальных окружений
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+**/.env
+**/.venv
+**/env/
+**/venv/
+**/ENV/
+**/env.bak/
+**/venv.bak/
+
+# Исключения для сборки и дистрибуции
+build/
+dist/
+*.egg-info/
+.eggs/
+**/build/
+**/dist/
+**/*.egg-info/
+**/.eggs/
+
+# Исключения для тестов
+.cache/
+.tox/
+.coverage
+.coverage.*
+**/.cache/
+**/.tox/
+**/.coverage
+**/.coverage.*
+
+# Jupyter Notebook
+.ipynb_checkpoints
+**/.ipynb_checkpoints
+
+# IDE и редакторы
+.idea/
+.vscode/
+**/.idea/
+**/.vscode/
+
+# Логи
+*.log
+**/*.log
+
+# MacOS
+.DS_Store
+*.appledouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
