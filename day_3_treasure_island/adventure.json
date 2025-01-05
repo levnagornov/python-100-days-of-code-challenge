@@ -1,0 +1,92 @@
+{
+  "title": "Treasure Island Adventure",
+  "start": "shipwreck",
+  "scenes": {
+    "shipwreck": {
+      "description": "Your ship crashes on the shores of a mysterious island. The crew is scattered, and you are left alone. You see a dense jungle ahead and a rocky path leading up a hill.",
+      "choices": {
+        "jungle": {
+          "text": "Enter the jungle",
+          "keyword": "jungle",
+          "next_scene": "jungle"
+        },
+        "hill": {
+          "text": "Climb the rocky hill",
+          "keyword": "hill",
+          "next_scene": "hilltop"
+        }
+      }
+    },
+    "jungle": {
+      "description": "The jungle is thick and full of strange noises. You come across an old map nailed to a tree and a rusted compass lying nearby.",
+      "choices": {
+        "take_map": {
+          "text": "Take the map",
+          "keyword": "map",
+          "next_scene": "treasure_clue"
+        },
+        "ignore_map": {
+          "text": "Ignore the map and keep walking",
+          "keyword": "ignore",
+          "next_scene": "danger"
+        }
+      }
+    },
+    "hilltop": {
+      "description": "From the top of the hill, you see the entire island. There’s a cave to the north and a sparkling lagoon to the south.",
+      "choices": {
+        "cave": {
+          "text": "Head to the cave",
+          "keyword": "cave",
+          "next_scene": "cave"
+        },
+        "lagoon": {
+          "text": "Go to the lagoon",
+          "keyword": "lagoon",
+          "next_scene": "lagoon"
+        }
+      }
+    },
+    "treasure_clue": {
+      "description": "The map points to a hidden treasure in the cave. You head there carefully, avoiding traps along the way.",
+      "choices": {
+        "enter_cave": {
+          "text": "Enter the cave",
+          "keyword": "cave",
+          "next_scene": "treasure"
+        }
+      }
+    },
+    "danger": {
+      "description": "Ignoring the map, you wander deeper into the jungle and encounter a wild animal. You don’t survive the attack.",
+      "choices": {}
+    },
+    "cave": {
+      "description": "Inside the dark cave, you find signs of old pirates and a faint glow deeper inside. You also hear strange noises.",
+      "choices": {
+        "explore": {
+          "text": "Explore the glowing area",
+          "keyword": "explore",
+          "next_scene": "treasure"
+        },
+        "retreat": {
+          "text": "Leave the cave",
+          "keyword": "leave",
+          "next_scene": "jungle_exit"
+        }
+      }
+    },
+    "lagoon": {
+      "description": "The lagoon is beautiful, but there’s no sign of treasure. You relax and enjoy the scenery, but your adventure ends here.",
+      "choices": {}
+    },
+    "treasure": {
+      "description": "You find the legendary treasure chest of Captain Silver! You open it to reveal gold, jewels, and ancient artifacts. You’ve won!",
+      "choices": {}
+    },
+    "jungle_exit": {
+      "description": "You leave the cave and wander back into the jungle, but you never find your way out.",
+      "choices": {}
+    }
+  }
+}
